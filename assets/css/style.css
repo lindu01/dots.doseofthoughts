@@ -1,0 +1,259 @@
+/*STILE GENERICO UTILE IN OGNI PAGINA PER ASSUCURARE
+COERENZA VISIVA
+
+DOTS COLORS
+Black #323232
+White #f0ede9
+Blue #a5bbb8
+yellow #fac54e
+red #ce2828
+
+*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  
+  h1,h2 {font-family: 'Montserrat', sans-serif;}
+  
+  h3,h4,h5,h6 {font-family: "Open Sans", sans-serif;}
+
+
+  /*MOVIMENTO CURSORE*/
+
+.cursor {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50%;
+    background: #323232;
+    pointer-events: none;
+    z-index: 111;
+    transition: all 0.2s ease-out;
+    animation: moveCursor1 .5s infinite alternate;
+}
+
+.expand {
+    background: transparent;
+    animation: moveCursor2 .8s forwards;
+    border: 1px solid #323232;
+}
+
+
+
+  /* ----------GENERAL STYLE---------------------*/
+section {
+    padding: 60px 0;
+    overflow: hidden;
+  }
+.section-bg {background-color: #f2f5fa;}
+
+.titles {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+.titles h2 {
+    font-size: 2.2rem;
+    color: #323232;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    padding-bottom: 0;
+  }
+.titles p {margin-bottom: 0; color:#323232;}
+  
+  a.button {
+    background-color: #ffffff;
+    text-align: center; 
+    border-radius: 25px; 
+    padding: 10px 30px 10px 30px; 
+    border: 1px solid #323232;
+    font-size: 1rem;
+    color: #323232;
+    transition: 0.3s;}
+  
+  a.button:hover {
+    border: 1px solid #323232;
+    color: #323232;
+   }
+
+
+/*------------------HEADER MENU STYLE---------------------*/
+
+  #header {
+    transition: all 0.5s;
+    z-index: 999;
+    background: rgba(255,255,255,0);
+    padding: 15px;
+    height: 100px;
+    margin-top: -20px;
+  }
+
+  #header .header-trasparent {background: transparent;}
+  #header.header-scrolled {
+    background: rgba(255,255,255,0);
+    /*box-shadow: 0px 2px 15px rgba(0,0,0,0.1);*/
+  }
+
+  #header .logo h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    line-height: 1;
+    font-weight: 400;
+  }
+  
+  /* *****************************************
+  ** ** NAVIGATION MENU
+  ** ****************************************/
+  .navbar {padding: 0;}
+  .navbar ul {
+    padding: 0; list-style: none;
+    margin: 0;
+    display: flex;
+    align-items: center; 
+  }
+  .navbar ul li {position: relative; margin-right: 0px; padding: 20px;}
+  
+  .navbar a {text-align: center; border-radius: 25px;}
+  
+  .navbar a, .navbar a:focus {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 30px 10px 30px;
+    font-size: 1rem;
+    color: #323232;
+    
+  }
+  
+  .navbar a:hover, .navbar .active, 
+   .navabar .active:focus, .navbar li:hover > a {
+    background-color: #323232;
+    color: #f0ede9;
+    transition: all 0.3s;
+   }
+  
+  
+  /*-------- *** Mobile navigation----------------------- */
+  .mobile-nav-toggle {
+    color: #323232;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.5s;
+    display: none;
+  }
+  
+  @media (max-width: 991px) {
+    .mobile-nav-toggle {display: block;}
+    .navbar ul {display: none;}
+  }
+  .navbar-mobile {
+    position: fixed;
+    overflow: hidden;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: rgba(51,60,79,0.8);
+    z-index: 999;
+  }
+  .navbar-mobile .mobile-nav-toggle {
+    color: #fff;
+    position: absolute;
+    top: 15px; right: 15px;
+  }
+  .navbar-mobile ul {
+    display: block;
+    background: #fff;
+    position: absolute;
+    top: 55px; right: 15px; bottom: 15px; left: 15px;
+    border-radius: 25px;
+    width: 60%;
+    margin: auto;
+  }
+  
+  .navbar-mobile ul li a{
+      text-align: center;
+      padding: 10px 30px 10px 30px;
+  
+  }
+
+
+/*---------------WRITE US-------------------
+------------------------------------------------------*/
+
+#contact .container .card {
+  padding: 20px;
+  border-radius: 25px;
+  border: none;
+  background-color: #f0ede9;
+}
+#contact .container .card .card-title {font-weight: 600;}
+#contact .container .card .mb-2 {width: 47%; float: left; margin-right: 10px;}
+
+#contact .container .card .form-label {font-size: 1rem; font-family:  'Montserrat'; font-weight: 500;}
+#contact .container .card .form-label-2 {font-size: 1rem; font-family:  'Montserrat'; font-weight: 500; width: 100%; margin-top: 10px;}
+
+#contact .container .card .form-control {border-radius: 25px;}
+
+
+
+
+
+
+/*-----------------FOOTER STYLE---------------------*/
+
+#footer {background-color: #ffffff; color: #323232; margin-bottom: 30px;}
+
+#footer .container {
+  border-radius: 25px; background-color: #f0ede9; 
+  padding: 30px;
+}
+
+#footer .row .text>img {width: 50%;}
+#footer .row .text>p {font-size: 0.8rem;}
+#footer .container .social-container {display: flex; justify-content: space-around; margin-top: 70px;}
+#footer .container .social-container #social-icons a.social {color: #323232; margin: auto; overflow: hidden;}
+#footer .container .social-container #social-icons a.social i {
+  font-size: 2rem; 
+  margin: 20px; 
+  text-align: center; 
+  vertical-align: middle;}
+#footer .container .social-container #social-icons a.social i:hover {
+  color: #ce2828; transition: all 0.3s; cursor: pointer;}
+
+#footer .row h5 {font-family: 'Montserrat'; font-size: 1rem; margin-top: 50px;}
+#footer .row .list-unstyled li a {font-size: 0.7rem;}
+#footer .row .list-unstyled li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media (max-width: 991px) {
+  
+  #footer {background-color: #ffffff; color: #323232; font-family: "Open Sans","sans-serif";}
+  #footer #logo-footer>img {width: 50%;}
+  #footer .container {border: 1px solid rgb(255, 255, 255); 
+    width: 100%; border-radius: 50% 50% 0% 0%; 
+    background-color: #f0ede9;
+    padding: 30px;}
+
+  #footer .container .social-container {margin-top: 20px;}
+
+  #footer .container .social-container #social-icons a.social {color: #323232; margin: auto;}
+  #footer .container .social-container #social-icons a.social i {font-size: 2rem; margin-right: 30px;}
+  #footer .container .social-container #social-icons a.social i:hover {transform: scale(1.1); transition: all 0.3s; cursor: pointer;}
+
+  #footer .container #last-list h6 {margin-top: 20px;}
+
+  #footer .container #last-list .text {width: 100%; float: left; font-size: 1rem; margin-top: 5px;}
+  #footer .container #last-list a.text:hover {text-decoration: underline;} 
+  #footer .container .col-lg-2 {display: none;}
+}
+  

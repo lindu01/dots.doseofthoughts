@@ -1,0 +1,451 @@
+/* ---------------------------------
+-- GENERAL
+----------------------------------- */
+
+/*DOTS COLORS
+Black #323232
+White #f0ede9
+Blue #a5bbb8
+yellow #fac54e
+red #ce2828
+*/
+   
+/* *****************************************
+  ** ** HERO SECTION -ARTICOLI
+  ** ****************************************/
+
+#hero {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;  
+    padding-top: 100px;
+    color: #323232;
+  }
+
+#hero .titles { padding: 20px; margin: auto; width: 85%; text-align: left;}
+#hero .titles h2 {font-weight: 400; font-size: 1rem;}
+
+@media (max-width: 991px) {
+    .titles {text-align: center;}
+}
+
+#hero .container {
+  height: 100vh;
+}
+
+#hero .row {
+  justify-content: space-around;
+}
+
+#hero .container .row .card .cont {
+  height: 220px;
+  overflow: hidden;
+}
+
+#hero .card {
+  border-radius: 25px; 
+  color: #323232;
+  border: none;
+  box-shadow: 0px 2px 15px rgba(0,0,0,0.1);
+  margin-bottom: 20px;} 
+
+  #hero .container .row .card .card-title {
+    font-weight: 600;
+    text-align: center;
+  }
+
+#hero .card-img-top {border-radius: 25px 25px 0px 0px;}
+
+
+@media (max-width: 991px) {
+  #hero {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;  
+    padding-top: 100px;
+    color: #323232;
+  }
+
+  #hero .titles { padding: 20px; margin: auto; width: 85%; text-align: left;}
+  #hero .titles h2 {font-weight: 400; font-size: 1rem;}
+
+  #hero .container {
+    height: auto;
+  }
+
+  #hero .row {
+    justify-content: space-around;
+  }
+
+  #hero .container .row .card .cont {
+    height: 220px;
+    overflow: hidden;
+  }
+
+  #hero .card {
+    padding: 20px;
+    border-radius: 25px; 
+    color: #323232;
+    border: none;
+    box-shadow: 0px 2px 15px rgba(0,0,0,0.1);
+    margin-bottom: 20px;} 
+
+    #hero .container .row .card .card-title {
+      font-weight: 600;
+      text-align: center;
+
+    }
+
+  #hero .card-img-top {border-radius: 25px 25px 0px 0px;}
+  nav.article-nav {
+    display: none;}
+}
+
+/*++++++++++++++*/
+nav.article-nav {
+  height: auto; width: 100%; margin-top: 100px;
+border: none;}
+  nav.article-nav .pagination {
+    color: #323232;
+    border: none;
+  }
+
+  nav.article-nav li .page-item {
+    margin-right: 5px;
+    color: #323232;   
+  }
+
+  nav.article-nav li .page-link {
+    color: #323232;
+    border-radius: 25px;
+    border: none;
+  }
+
+  nav.article-nav li .page-link:hover {
+    color: yellow;
+    transition: all 0.3s;
+  }
+
+
+/* *****************************************
+** ** SECTION GALLERY
+** ****************************************/
+#gallery .container-fluid {
+  height: auto;
+  width: 90%;
+}
+
+/* Stile per la griglia degli articoli */
+#gallery .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+
+
+/* Stile per gli articoli */
+.article {
+  background-color: #ffffff;
+  border-radius: 25px;
+  padding: 20px;
+  text-align: center;
+  font-size: 1rem;
+  box-shadow: 0px 2px 15px rgba(0,0,0,0.1);
+}
+.article>img {
+  margin-top: 0;
+  border-radius: 25px;
+}
+
+.article>h5 {
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.article>p {
+  font-size: 0.8rem;
+}
+
+.hidden {
+  display: none;
+ }
+
+/* Stile per i bottone di visualizzazione */
+#gallery .show-button {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#gallery .show-button button {
+  border-radius: 25px;
+  background-color: #323232;
+  padding: 10px 30px 10px 30px;
+  color: #ffffff;
+  text-align: center;
+}
+
+
+@media (max-width: 991px) {
+  #gallery .container-fluid {
+    height: auto;
+    width: 90%;
+  }
+  
+  /* Stile per la griglia degli articoli */
+  #gallery .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 4fr);
+    grid-gap: 30px;
+  }
+  
+  
+  /* Stile per gli articoli */
+  .article {
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding: 20px;
+    text-align: center;
+    font-size: 1rem;
+    box-shadow: 0px 2px 15px rgba(0,0,0,0.1);
+  }
+  .article>img {
+    margin-top: 0;
+    border-radius: 25px;
+  }
+  
+  .article>h5 {
+    margin-top: 20px;
+    font-weight: 600;
+  }
+  
+  .article>p {
+    font-size: 0.8rem;
+  }
+  
+  .hidden {
+    display: none;
+   }
+  
+  /* Stile per i bottone di visualizzazione */
+  #gallery .show-button {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  #gallery .show-button button {
+    border-radius: 25px;
+  background-color: #323232;
+    padding: 10px 30px 10px 30px;
+    color: #ffffff;
+    text-align: center;
+  }
+}
+
+
+/* *****************************************
+** ** SECTION TODAY INTERVIEW
+** ****************************************/
+#interview .titles h2, #interview .titles p{color: #323232;}
+
+#interview .container .col-lg-7 {
+  background-color: #ffffff; 
+  border-radius: 25px;
+  padding: 20px;}
+
+  #interview .container .col-lg-7 .main-video {
+    border-radius: 25px;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+#interview .main-video {
+  width: auto;
+  height: auto;
+}
+
+  #interview a .play-btn {
+    width: 94px; height: 94px;
+    border-radius: 50%;
+    display: block;
+    background-color: #f0ede9;
+    /* centra orizzontalmente e verticalmente */
+    position: absolute;
+    left: calc(50% - 47px); top: calc(50% - 47px);
+  }
+  #interview a .play-btn:after {
+    content: '';
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translateX(-40%) translateY(-50%);
+    width: 0; height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #323232;
+    z-index: 100;
+    transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  #interview a .play-btn:before {
+    content: '';
+    position: absolute;
+    width: 120px; height: 120px;
+    animation-delay: 0s;
+    animation: pulsate-btn 2s;
+    animation-direction: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps;
+    opacity: 1;
+    border: 2px solid #323232;
+    background: rgba(198,16,0,0);
+    top: -15%; left: -15%;
+    border-radius: 50%;
+  }
+
+  @keyframes pulsate-btn {
+    0% {
+      transform: scale(0.6, 0.6);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1, 1);
+      opacity: 0;
+    }
+  }
+
+  
+  #interview .container .col-lg-7 .main-video>img {
+    border-radius: 25px;
+    margin: auto;
+    height: fit-content;
+  }
+  #interview .container .col-lg-7 .body-text {text-align: center; padding: 0px  40px 0px 40px;}
+  #interview .container .col-lg-7 .body-text>h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+#interview .container .col-lg-5 .card {
+  border: none;
+  border-radius: 25px;
+  padding: 20px;
+  /*box-shadow: 0px 2px 15px rgba(0,0,0,0.1);*/
+}
+#interview .container .col-lg-5 .col-md-4 {
+    height: auto;
+  }
+
+
+#interview .container .col-lg-5 .card .img-fluid {
+  border-radius: 25px;
+}
+
+#interview .container .col-lg-5 .card .card-title {
+  font-weight: 600;
+}
+#interview .container .col-lg-5 .card .card-text {
+  font-size: 0.8rem;
+}
+
+#interview .container .col-lg-5 .card .text-body-secondary {
+  font-style: italic;
+} 
+
+
+@media (max-width: 991px) {
+  #interview .titles h2, #interview .titles p{color: #323232;}
+
+  #interview .container .col-lg-7 {
+    background-color: #ffffff; 
+    border-radius: 25px;
+    padding: 20px;}
+
+    #interview .container .col-lg-7 .main-video {
+      border-radius: 25px;
+      width: 90%;
+      margin: auto;
+      position: relative;
+      margin-bottom: 30px;
+    }
+    #interview .container .col-lg-7 .main-video a>i {
+      position: absolute;
+      font-size: 4rem;
+      color: #ffffff;
+      top: 40px;
+      left: 120px;
+      z-index: 3;
+      cursor: pointer;
+    }
+
+    #interview .container .col-lg-7 .main-video>img {
+      border-radius: 25px;
+      margin: auto;
+    }
+    #interview .container .col-lg-7 .body-text {
+      text-align: center; padding: 0px  40px 0px 40px;}
+
+    #interview .container .col-lg-7 .body-text>h5 {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+  #interview .container .col-lg-5 .card {
+    display: none;
+  }
+
+  #interview .container .col-lg-5 .card .img-fluid {
+    border-radius: 25px;
+  }
+
+  #interview .container .col-lg-5 .card .card-title {
+    font-weight: 600;
+  }
+  #interview .container .col-lg-5 .card .card-text {
+    font-size: 0.8rem;
+  }
+
+  #interview .container .col-lg-5 .card .text-body-secondary {
+    font-style: italic;
+  } 
+
+}
+
+/*--------------- CONTACT FORM -------------------
+------------------------------------------------------*/
+#contact {
+  margin-bottom: 0;
+}
+
+#contact .container .titles {
+  height: 50px;
+  color: #323232;
+  text-align: center;
+}
+#contact .container .card {
+  margin: auto;
+  width: 80%;
+  padding: 20px;
+  border-radius: 25px;
+  border: none;
+  background-color: #f0ede9;
+  box-shadow: 0px 2px 15px rgba(0,0,0,0.1);
+  color: #323232;
+}
+
+
+#contact .container .card .card-title {font-weight: 600;}
+#contact .container .card .mb-2 {width: 47%; float: left; margin-right: 10px;}
+
+#contact .container .card .form-label {font-size: 1rem; font-family:  'Montserrat'; font-weight: 500;}
+#contact .container .card .form-label-2 {font-size: 1rem; font-family:  'Montserrat'; font-weight: 500; width: 100%; margin-top: 10px;}
+
+#contact .container .card .form-control {border-radius: 25px;}
+
+
+
+ /*FOOTER POADCAST BG*/
+ #footer .container {
+  background-color: #fac54e;
+}

@@ -1,0 +1,330 @@
+/* ---------------------------------
+-- GENERAL
+----------------------------------- */
+
+/*DOTS COLORS
+Black #323232
+White #f0ede9
+Blue #a5bbb8
+yellow #fac54e
+red #ce2828
+*/
+
+
+/* *****************************************
+** ** HERO SECTION
+** ****************************************/
+#hero {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 50px 0;
+  /*background-color: #f0ede9;*/
+  background-image: linear-gradient(to bottom, #f0ede9 25%, #ffffff);
+}
+
+#hero .titles {
+  width: 100%;
+  text-align: left;
+  margin-top: 180px;
+  color: #323232;
+  padding: 0px 0px 0px 80px;
+}
+
+#hero h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  margin: 0 0 5px 0;
+}
+
+#hero h1 span {
+  font-size: 2rem;
+}
+
+#hero h2 {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #323232;
+}
+
+#hero a.button {
+  border: 1px solid #323232; 
+  background-color: #ffffff; 
+  margin: auto;
+  margin-top: 40px;
+  text-align: center; 
+  border-radius: 25px; 
+  padding: 10px 30px 10px 30px; 
+  font-size: 1rem;
+  color: #323232;
+  transition: 0.3s;}
+
+  #hero a.button:hover {
+  background-color: #323232;
+  color: #ffffff;
+  transition: all 0.3s;
+ }
+
+
+@media (max-width: 991px) {
+  #hero {text-align: center; height: 100vh;}
+  #hero img {width: 70%}
+  #hero .titles {text-align: center; margin: 0%; padding: 40px 0;}
+  #hero h1 {font-size: 2.5rem;}
+  #hero h2 {font-size: 1rem;}
+  #hero a.button { 
+    background-color: #323232; 
+    margin: auto;
+    margin-top: 50px;
+    text-align: center; 
+    border-radius: 25px; 
+    padding: 10px 30px 10px 30px; 
+    font-size: 1rem;
+    color: #f0ede9;}
+}
+
+
+/* *****************************************
+** ** SECTION TODAY NEWS
+** ****************************************/
+
+#news {
+  /*background-image: linear-gradient(to bottom, #ce2828, #ffffff 90%)*/
+}
+
+#news .titles h2, #news .titles p{color: #323232;}
+
+#news .card {
+  background-color: #ffffff; 
+  border-radius: 25px;
+  margin-bottom: 30px;
+  border: none;
+  /*box-shadow: 0px 2px 15px rgba(0,0,0,0.1);*/
+}
+
+#news .container .row:nth-child(1) {padding: 20px;}
+
+#news .card .card-body {
+  padding: 20px 80px 0px 80px;
+  text-align: center;
+}
+
+#news .card .card-body>h3 {
+  height: 30px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  color: #323232;
+}
+
+#news .card .img-fluid {
+  width: 90%;
+  border-radius: 25px;
+  padding: 0;
+  justify-content: space-around;
+}
+
+.news .container p {
+  color: #323232;
+  margin-bottom: 30px;
+  text-align: left;
+}
+#news a.button {
+  margin-top: 30px;
+  border: 1px solid black;}
+
+
+  #news a.button:hover {
+    background-color: #323232;
+    color: #ffffff;
+    transition: all 0.3s;
+   }
+
+.news .container .news {
+  margin-right: 30px;
+  float: right;
+  padding-top: 30px;
+}
+
+@media (max-width: 991px) {
+  #news .titles h2, #news .titles p{color: #323232; text-align: center;}
+
+  #news .card {
+    background-color: #ffffff; 
+    border-radius: 25px;
+    margin-bottom: 20px;
+    border: none;
+    /*box-shadow: 0px 2px 15px rgba(0,0,0,0.1);*/
+  }
+  #news .container .row:nth-child(1) {padding: 10px;}
+  #news .card .card-body {
+  padding: 0px;
+  text-align: center;
+}
+#news .card .card-text {
+  display: flex;
+  justify-content: space-around;
+}
+
+  #news .card .card-body>h3 {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    color: #323232;
+  }
+
+  #news .card .img-fluid {
+    width: 90%;
+    border-radius: 25px;
+    padding: 20px;
+    margin-left: 50px;
+  }
+
+  .news .container p {
+    color: #323232;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  #news a.button {
+    margin-top: 0px;
+    background-color: #323232;
+    color: #f0ede9;}
+
+}
+
+
+/* *****************************************
+** ** SECTION whoarewe
+** ****************************************/
+.whoarewe {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 50px 0;
+  /*box-shadow: 0px 2px 15px rgba(0,0,0,0.1);*/
+}
+
+.whoarewe .content {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  padding: 0px 60px 0px 60px;
+}
+.whoarewe .titles {margin-bottom: 0px;}
+.whoarewe .card {
+  border-radius: 25px;
+  border: none;
+  color: #323232;
+  padding: 10px;
+  height: auto;
+  text-align: center;
+  /*box-shadow: 0px 2px 15px rgba(0,0,0,0.1);*/
+}
+
+.whoarewe .card .card-title {
+  font-weight: 600;
+  font-size: 1.2rem;
+  font-family: 'Montserrat';
+}
+.whoarewe .card .card-img {
+  width: 80%;
+  margin: auto;
+  border-radius: 25px;
+}
+
+.whoarewe .card .card-text {
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+}
+
+.whoarewe .card .card-body>a {
+  justify-content: space-around;
+  font-size: 0.8rem;
+  padding: 10px;
+  color: #323232;
+  background-color: #ffffff;
+  border-radius: 25px;
+  border: 0.5px solid #323232;}
+
+.whoarewe .card .card-body>a:hover {background-color: #323232; color: #ffffff; transition: all 0.3s; cursor: pointer;}
+
+
+@media (max-width: 991px) {
+  .whoarewe {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 50px 0;
+    /*box-shadow: 0px 2px 15px rgba(0,0,0,0.1);*/
+  }
+  
+  .whoarewe .content {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+  }
+  .whoarewe .titles {margin-bottom: 0px;}
+  .whoarewe .card {
+    border-radius: 25px;
+    border: none;
+    color: #323232;
+    padding: 10px;
+    height: 60vh;
+    text-align: center;
+    /*box-shadow: 0px 2px 15px rgba(0,0,0,0.1);*/
+    animation: none;
+  }
+  
+  .whoarewe .card .card-title {
+    font-weight: 600;
+    font-size: 2rem;
+    font-family: 'Montserrat';
+  }
+  .whoarewe .card .card-img {
+    width: 70%;
+    margin: auto;
+    border-radius: 25px;
+  }
+  
+  .whoarewe .card .card-text {
+    display: none;
+  }
+  
+  .whoarewe .card .card-body>a {
+    justify-content: space-around;
+    font-size: 0.8rem;
+    padding: 10px;
+    color: #323232;
+    background-color: #ffffff;
+    border-radius: 25px;
+    border: 0.5px solid #323232;}
+
+}
+
+
+/*--------------- CONTACT FORM -------------------
+------------------------------------------------------*/
+
+#contact .container .card {
+  padding: 20px;
+  border-radius: 25px;
+  border: none;
+  background-color: #f0ede9;
+}
+#contact .container .card .card-title {font-weight: 600;}
+#contact .container .card .mb-2 {width: 47%; float: left; margin-right: 10px;}
+
+#contact .container .card .form-label {font-size: 1rem; font-family:  'Montserrat'; font-weight: 500;}
+
+#contact .container .card .form-label-2 {font-size: 1rem; font-family:  'Montserrat'; font-weight: 500; width: 100%; margin-top: 10px;}
+
+#contact .container .card .form-control {border-radius: 25px;}
+
+
